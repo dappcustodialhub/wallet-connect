@@ -1,20 +1,18 @@
 name = "wallet-connect"
-type = "javascript"
+main = "src/index.js"
 account_id = "YOUR_CLOUDFLARE_ACCOUNT_ID"
 workers_dev = true
-route = "api/*"
-zone_id = "YOUR_ZONE_ID"
 compatibility_date = "2026-01-01"
 
 [env.production]
 name = "wallet-connect-prod"
-route = "https://resolutioncustodialdapp.pages.dev/api/*"
-zone_id = "YOUR_ZONE_ID"
+routes = [
+  { pattern = "resolutioncustodialdapp.pages.dev/api/*", zone_name = "resolutioncustodialdapp.pages.dev" }
+]
 
 [build]
 command = "npm install"
 cwd = "./"
 
-[env.production.routes]
-pattern = "resolutioncustodialdapp.pages.dev/api/*"
-zone_name = "resolutioncustodialdapp.pages.dev"
+[assets]
+directory = "public"
