@@ -107,7 +107,7 @@ export default {
       // In production, send email through your configured service
       // Example with SendGrid:
       /*
-      if (env.SENDGRID_API_KEY) {
+      if (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) {
         const sgResponse = await fetch('https://api.sendgrid.com/v3/mail/send', {
           method: 'POST',
           headers: {
