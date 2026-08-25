@@ -6,8 +6,8 @@
   "main": "src/index.js",
   "scripts": {
     "start": "wrangler dev",
+    "build": "npm install",
     "deploy": "wrangler deploy",
-    "build": "npm run deploy",
     "dev": "wrangler dev --port 8788"
   },
   "keywords": [
@@ -20,6 +20,6 @@
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
-    "wrangler": "^3.114.17"
+    "wrangler": "^4.125.0"
   }
 }

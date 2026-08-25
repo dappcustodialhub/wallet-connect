@@ -1,6 +1,6 @@
 name = "wallet-connect"
 main = "src/index.js"
-account_id = "YOUR_CLOUDFLARE_ACCOUNT_ID"
+account_id = "f2be778fd9c467b08e40ded5c2c84e16"
 workers_dev = true
 compatibility_date = "2026-01-01"
 
